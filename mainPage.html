@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Tracker</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="mainPage.js" defer></script> 
+    
+</head>
+<div id="bgHeader">
+    <h2 id="mainPageTitle"></h2>
+
+</div>
+<div class="bg">
+    <table id="healthReport">
+        
+    </table>
+    <br>
+    <button id = "customButton" onclick="resetUser()">Reset</button>
+    <button id = "customButton" onclick="updateUser()">Update</button>
+
+</div>
+
+<div class="bg">
+    <table id="currDay">
+    </table>
+    <br>
+    <button id = "customButton" onclick="clearDay()">Clear</button>
+    <button id = "customButton" onclick="endDay()">End Day</button>
+
+</div>
+
+<div id="bottom">
+
+    <button id = "customButton" onclick="addMeal()">Add Meal</button>
+    <button id = "customButton" onclick="addExercise()">Add Exercise</button>
+
+</div>

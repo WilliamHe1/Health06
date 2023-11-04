@@ -1,0 +1,104 @@
+body, html {
+    font-family: Arial, sans-serif;
+    background-color: rgba(115, 88, 60, 0.509);
+    overflow:scroll;
+    font-weight: bold;
+    font-size: 20px;
+    height: 100%;
+    margin: 0px;
+    color: rgb(255, 255, 255);
+    /* The image used */
+    background-image: url("appGymBackground.jpg");
+  
+    /* Full height */
+    height: 100%; 
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+div{
+    margin: 10px;
+    background-color: rgba(63, 57, 50, 0.732);
+    padding: 10px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    border-radius: 10px;
+    text-align: center;
+    align-content: center;
+    margin: 0 auto;
+    margin-top: 15px;
+    margin-left: 5px;
+    margin-right: 5px;
+    overflow-x: scroll;
+
+}
+#bgHeader {
+    padding: 5px;
+}
+hr{
+    height: 2px;
+    border-width: 0;
+    background-color: white;
+    border-radius: 5px;
+}
+.labels {
+    max-width: 100px;
+}
+
+
+form  { display: table; 
+        margin: 0 auto;     }
+p     { display: table-row;  }
+label { display: table-cell; }
+input { display: table-cell;
+        font-size: 20px; }
+
+#customButton {
+    border: 0px;
+    font-size: 16px;
+    color: white;
+    background-color: rgb(23, 21, 17);
+    border-radius: 5px;    
+    width: 125px;
+}
+#customButton:hover{
+    background-color: white;
+    color: rgb(23, 21, 17);
+}        
+#continue {
+    border: 0px;
+    font-size: 20px;
+    color: white;
+    background-color: rgb(23, 21, 17);
+    border-radius: 5px;    
+    width: 150px;
+}
+#continue:hover{
+    background-color: white;
+    color: rgb(23, 21, 17);
+}
+input{
+    border: 0px;
+    border-radius: 5px;
+    width: 200px;
+}
+select{
+    border: 0px;
+    border-radius: 5px;
+    width:200px;
+    font-size: 20px;
+}
+table{
+    margin: 0 auto;
+    border-spacing: 20px;
+}
+
+#bottom{
+    margin-bottom: 15px;
+}
+
+#caloriesBurned{
+    margin: 0 auto;
+    border-spacing: 20px;
+}

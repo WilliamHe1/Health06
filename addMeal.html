@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Tracker</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="add.js" defer></script> 
+    
+</head>
+
+<div class="bg">
+    <h2>Add Meal</h2>
+    <br>
+    <form>
+        <p>
+        <label for="calories">Calories</label>
+        <input id="calories" type="number" min="1">
+        </p>
+        <br>
+        <p>
+        <label for="fat">Fat (g)</label>
+        <input id="fat" type="number" min="1">
+        </p>
+        <br>
+        <p>
+            <label for="protein">Protein (g)&nbsp&nbsp</label>
+            <input id="protein" type="number" min="1">
+        </p>
+        <br>
+        <p>
+            <label for="carbs">carbs (g)</label>
+            <input id="carbs" type="number" min="1">
+        </p>
+    </form>
+    <br>
+    <br>
+    <button id = "continue" onclick="backToMainPage()">Back</button>
+    <button id = "continue" onclick="mealAdded()">Add</button>
+</div>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Tracker</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="add.js" defer></script> 
+    
+</head>
+
+<div class="bg">
+    <h2>Add Exercise</h2>
+    <br>
+    <form>
+        <p>
+            <label for="exerciseType">Type</label>
+
+            <select name="exerciseType" id="exerciseType" onchange="updateCaloriesField()">
+            <option value="cardio" selected>cardio training</option>
+            <option value="strength">strength training</option>
+            </select>
+        </p>
+        <br>
+        <p>
+            <label for="intensity">Intensity</label>
+
+            <select name="intensity" id="intensity" onchange="updateCaloriesField()">
+            <option value="low" selected>Low</option>
+            <option value="medium">Medium</option>
+            <option value="high">High</option>
+            </select>
+        </p>
+        <br>
+        <p>
+            <label for="duration">Duration (min)&nbsp&nbsp</label>
+            <input id="duration" type="number" min="1" onchange="updateCaloriesField()">
+        </p>
+        <br>
+    </form>
+    <span id ="caloriesBurned">Calories burned: 0</span>
+    <br>
+    <br>
+    <button id = "continue" onclick="backToMainPage()">Back</button>
+    <button id = "continue" onclick="exerciseAdded()">Add</button>
+</div>
