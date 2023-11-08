@@ -11,6 +11,10 @@ else {
     document.getElementById("weight").value = localStorage.getItem("weight");
     document.getElementById("fullname").value = localStorage.getItem("fullName");
     document.getElementById("age").value = localStorage.getItem("age");
+    document.getElementById("sex").value = localStorage.getItem("sex");
+    document.getElementById("ft").value = localStorage.getItem("ft");
+    document.getElementById("in").value = localStorage.getItem("inches");
+    document.getElementById("reminder").value = localStorage.getItem("reminder");
 
 }
 
@@ -23,9 +27,14 @@ function goToMainPage(){
     weight = document.getElementById("weight").value;
     fullName = document.getElementById("fullname").value;
     age = document.getElementById("age").value;
+    ft = document.getElementById("ft").value;
+    inches = document.getElementById("in").value;
+    reminder = document.getElementById("reminder").value;
+    sex = document.getElementById("sex").value;
 
-    if (weight === "" || fullName === "" || age === "" || weight <= 0 || age <= 0){
-        window.alert("Please fill in all the fields. Inputs for numbered values also can't be negative or 0.");
+    if (weight === "" || ft === "" || inches === "" || sex === "" 
+    || fullName === "" || age === "" || weight <= 0 || age <= 0){
+        window.alert("Please fill in all the fields. Inputs for numbered values also can't be negative or 0. Check-In time is optional.");
     }
     else{
         if (weight > 700) {
@@ -40,12 +49,17 @@ function goToMainPage(){
         localStorage.setItem('fullName', fullName);
         localStorage.setItem('weight', weight);
         localStorage.setItem('age', age);
+        localStorage.setItem('sex', sex);
+        localStorage.setItem('ft', ft);
+        localStorage.setItem('inches', inches);
 
         localStorage.setItem('caloriesGoal', caloriesGoal);
         localStorage.setItem('caloriesBurnedGoal', caloriesBurnedGoal);
         localStorage.setItem('fatGoal', fatGoal);
         localStorage.setItem('proteinGoal', proteinGoal);
         localStorage.setItem('carbGoal', carbGoal);
+
+        localStorage.setItem('reminder', reminder);
 
         if (!setBefore) {
             localStorage.setItem('daysTracked', 0);

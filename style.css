@@ -102,3 +102,12 @@ table{
     margin: 0 auto;
     border-spacing: 20px;
 }
+#ft {
+    width: 65px;
+}
+#in {
+    width: 65px;
+}
+#recommendation{
+    background-color: rgba(0, 0, 0, 0.197);
+}
