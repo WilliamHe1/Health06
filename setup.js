@@ -33,8 +33,9 @@ function goToMainPage(){
     sex = document.getElementById("sex").value;
 
     if (weight === "" || ft === "" || inches === "" || sex === "" 
-    || fullName === "" || age === "" || weight <= 0 || age <= 0){
-        window.alert("Please fill in all the fields. Inputs for numbered values also can't be negative or 0. Check-In time is optional.");
+    || fullName === "" || age === "" || weight <= 0 || age <= 0
+    || ft < 0 || inches < 0){
+        window.alert("Please fill in all the fields. Inputs for numbered values also can't be negative or 0 (ft and in can be 0 but not negative). Check-In time is optional.");
     }
     else{
         if (weight > 700) {
